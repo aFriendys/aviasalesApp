@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.section{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    flex: 1;
+}
+
+.content-wrapper{
+    width: 66.666%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &_footer{
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+        outline: 1px solid #DFE5EC;
+        min-height: 50px;
+
+        button{
+            flex: 1;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    .section{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .section{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .content-wrapper{
+        width: unset;
+        flex: 1;
+
+        &_footer{
+            button{
+                padding: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: 1px solid #DFE5EC;
+    min-height: 50px;
+}
+
+.radio-group{
+    width: 100%;
+    display: flex;
+
+    label{
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        border: unset !important;
+        height: 100%;
+    }
+}
